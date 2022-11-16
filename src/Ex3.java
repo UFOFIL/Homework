@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Ex3 {
     public static void main(String[] args) {
         int size;
+        System.out.println("Welcome to my program. Please, enter the size of rhombus.");
         Scanner scanner = new Scanner(System.in);
         size = scanner.nextInt();
         while (size < 3 || size % 2 == 0) {
@@ -30,6 +31,7 @@ public class Ex3 {
                 noOfColumns = noOfColumns - 2;
             }
         }
+        System.out.println("\n"+" Goodbye!");
 
     }
 }

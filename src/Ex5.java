@@ -1,27 +1,36 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class Ex5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your number");
+        System.out.println("Welcome to my program. Please, Enter your number.");
         int number = scanner.nextInt();
         int num1 = 0;
         int num2 = 1;
-        int num3;
+        int result;
         for (int i = 1; i <= number; i++) {
-            num3 = num1 + num2;
-            if (num3==number){
-                System.out.println("Fibonachi");
-                boolean isFibo=true;
-            }
+            result = num1 + num2;
             num1 = num2;
-            num2 = num3;
+            num2 = result;
+            if (result == number) {
+                System.out.println("This is a Fibonachi number");
+                break;
+            }
 
+            if (result > number) {
+                System.out.println("This is Not a Fibonachi number");
+                break;
+            }
         }
+        System.out.println("Goodbye!");
 
     }
-
 }
+
+
+
 
 
 

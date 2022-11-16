@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Ex4 {
     public static void main(String[] args) {
         int number, simple;
-        System.out.println("Enter your number.");
+        System.out.println("Welcome to my program. Enter the count of numbers .");
         Scanner scanner = new Scanner(System.in);
         number = scanner.nextInt();
         boolean isSuccessed = false;
@@ -27,6 +27,8 @@ public class Ex4 {
             }
 
         }
+        System.out.println("Goodbye!");
     }
+
 }
 
